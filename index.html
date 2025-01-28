@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Stand</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="title">
+        <img src="assets/MISIS_logoblock_main_rus_RGB-01 1.svg" alt="MISIS LOGO" class="misis_logo_link open-modal"
+            data-modal="misis">
+
+    </div>
+    <div class="grid-container">
+        <div class="modal_button open-modal item" data-modal="guide_modal">
+            Гид первокурсника
+        </div>
+
+        <div class="modal_button open-modal item" data-modal="repair_modal">
+            Заявка на ремонт
+        </div>
+
+        <div class="modal_button open-modal item" data-modal="documents_modal">
+            Документы
+        </div>
+
+        <div class="modal_button open-modal item" data-modal="faq_modal">
+            Часто задаваемые вопросы
+        </div>
+
+        <div class="modal_button open-modal item wide" data-modal="contacts_modal">
+            Контакты
+        </div>
+    </div>
+
+
+    <!-- Модальные окна -->
+    <div class="modal" id="misis">
+        <div class="modal-content">
+
+            <div class="modal_appbar">
+                <p class="modal_title">НИТУ МИСИС</p>
+                <span class="close-button close-modal" data-modal="guide_modal">&times;</span>
+            </div>
+            
+            <iframe loading=lazy seamless src="https://misis.ru" width="100%" height="80%" scrolling="auto">
+            </iframe>
+        </div>
+    </div>
+
+    <div class="modal" id="guide_modal">
+        <div class="modal-content">
+            <div class="modal_appbar">
+                <p class="modal_title">Гид первокурсника</p>
+                <span class="close-button close-modal" data-modal="guide_modal">&times;</span>
+            </div>
+
+            <iframe loading=lazy seamless src="https://welcome.misis.ru" width="1533px" height="80%" scrolling="auto">
+            </iframe>
+        </div>
+    </div>
+
+    <div class="modal" id="repair_modal">
+        <div class="modal-content">
+            <div class="modal_appbar">
+                <p class="modal_title">Заявка на ремонт</p>
+                <span class="close-button close-modal" data-modal="guide_modal">&times;</span>
+            </div>
+            <iframe loading=lazy seamless src="http://misisdormitory.ru/" width="1533px" height="80%" scrolling="auto">
+            </iframe>
+        </div>
+    </div>
+
+    <div class="modal" id="documents_modal">
+        <div class="modal-content">
+            <div class="modal_appbar">
+                <p class="modal_title">Документы</p>
+                <span class="close-button close-modal" data-modal="guide_modal">&times;</span>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="modal" id="faq_modal">
+        <div class="modal-content">
+            <div class="modal_appbar">
+                <p class="modal_title">Часто задаваемые вопросы</p>
+                <span class="close-button close-modal" data-modal="guide_modal">&times;</span>
+            </div>
+            <div class="faq">
+                <details>
+                    <summary id="1">В какое время можно приводить гостей в общежитие по будням и выходным?</summary>
+                    <ul>
+                        <li>Гости в общежитии могут находиться в период с 17:00 до 23:00 часов. По заявлению
+                            принимающей стороны с разрешения соседей по комнате с 9:00 до 23:00.</li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary id="2">Кого я могу провести с собой в общежитие?</summary>
+                    <ul>
+                        <li>Родители, родственники, знакомые, студенты НИТУ МИСИС. Проживающий несет персональную
+                            ответственность за поведение пришедшего к нему гостя, соблюдение ими настоящих правил.
+                        </li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary id="3">Сколько гостей единовременно я могу провести?</summary>
+                    <ul>
+                        <li>Не более 2 человек.</li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary id="4">Я имею прописку в Москве, но очень хочу в общежитие. Можно ли что-то сделать?
+                    </summary>
+                    <ul>
+                        <li>Общежитие предоставляется иногородним студентам НИТУ МИСИС.</li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary id="5">Вышел приказ о моем зачислении, в какое общежитие меня поселят и когда это
+                        станет известно?</summary>
+                    <ul>
+                        <li>Списки о распределении по корпусам общежитий можно увидеть на сайте университета в
+                            разделе Общежития. Там будут указаны корпуса, куда распределен студент.</li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary id="6">Есть ли возможность оставлять велосипед в помещении, чтобы избежать его кражи?
+                    </summary>
+                    <ul>
+                        <li>Велосипед можно оставить в специально отведенном для этого месте (в подвале).</li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary id="7">Как подключиться к интернету в комнате? Где-то есть кабель? Или только
+                        бесплатный WiFi?</summary>
+                    <ul>
+                        <li>Вам нужно оставить заявку на сайте http://mgisis.ru/</li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary id="8">Не подскажете, режим работы бюро пропусков в Горняк-2?</summary>
+                    <ul>
+                        <li>Вторник, четверг с 18-00 до 19-00 часов.</li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary id="9">Что нужно сделать, чтобы записаться на спартакиаду?</summary>
+                    <ul>
+                        <li>Списки формируют Студенческий совет. К ним нужно обратиться и записаться.</li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary id="10">Не могли бы проинформировать меня о документах для временной регистрации?
+                    </summary>
+                    <ul>
+                        <li>Паспорт-оригинал</li>
+                        <li>Четкую копию паспорта (1-ю страницу и страницу с регистрацией)</li>
+                        <li>Справка с указанием № приказа о зачислении и сроком обучения</li>
+                        <li>Выписка из приказа о зачислении</li>
+                        <li>Выписка о предоставлении места в жилом помещении общежития студенту</li>
+                        <li>Ручка для заполнения документов</li>
+                        <li>Справки можно получить в СТО университета</li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary id="11">Можно ли, проживающим в г-2, пользоваться прачечной в г-1?</summary>
+                    <ul>
+                        <li>Можно</li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary id="12">Не могли бы проинформировать меня о документах для временной регистрации?
+                    </summary>
+                    <ul>
+                        <li>Ответ</li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary id="13">Какие плиты установлены на общих кухнях и какую посуду, соответственно, на них
+                        можно использовать?</summary>
+                    <ul>
+                        <li>На кухнях установлены электрические плиты. Посуда подходит любая.</li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary id="14">Можете рассказать структуру стандартного блока общежития Горняк-2?</summary>
+                    <ul>
+                        <li>В блоке – комната на 2 и 3 человека, прихожая ванная и туалет.</li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary id="15">Требуется ли брать с собой одеяло и прочую постельную утварь?</summary>
+                    <ul>
+                        <li>При заселении студенты получают постельные принадлежности необходимые для проживания в
+                            общежитии (подушку, одеяло, постельное белье). Также студенты могут пользоваться своим
+                            постельными принадлежностями.</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary id="16">Холодильник чаще всего присутствует в блоке, или придется докупать?</summary>
+                    <ul>
+                        <li>Холодильник (не старше 5 лет с даты выпуска) студенты сами приобретают 1шт в комнату.
+                        </li>
+                    </ul>
+                </details>
+                <details>
+                    <summary id="17">На сайте МИСИС есть информация, что места в общежитии предоставляются всем
+                        нуждающимся (в том числе и вне бюджетников). Действительно ли это так? Дадут ли место в
+                        общежитии для вне бюджетника?</summary>
+                    <ul>
+                        <li>Да в случае если остались места.</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary id="18">Когда проходит конкурс на лучшую комнату общежития? И как это вообще
+                        происходит?</summary>
+                    <ul>
+                        <li>Студенческий совет проводит этот конкурс в период с Октября по Декабрь.</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary id="19">Двухъярусные кровати во всех комнатах?</summary>
+                    <ul>
+                        <li>Нет.</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary id="20">Справки, полученные в иностранных поликлиниках, подойдут? На русском языке. Для
+                        иностранных граждан.</summary>
+                    <ul>
+                        <li>При заселении такие справки подходят. При получении медицинской страховки, необходимо
+                            обновить анализы в Москве.</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary id="21">В анализе на ВИЧ написано, что он действителен полгода, если сделали в июле не
+                        подойдет?</summary>
+                    <ul>
+                        <li>Для заселения справки должны быть оформлены в марте или позже.</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary id="22">Где и как можно оформить полис ОМС или ДМС гражданину Казахстана?</summary>
+                    <ul>
+                        <li>Такую информацию можно получить в СТО университета.</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary id="23">Копии анализов для заселения подойдут или оригинал надо?</summary>
+                    <ul>
+                        <li>При заселении студенты предоставляют оригиналы, но сдать в личное дело можно копии.</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary id="24">Возможна ли оплата общежития на месте картой банка или только наличные?
+                        Возможно ли оплатить сразу за несколько месяцев вперёд?</summary>
+                    <ul>
+                        <li>Оплата за проживание в общежитии производится через личный кабинет и банковской картой.
+                            Оплатить возможно сразу несколько месяцев. </li>
+                    </ul>
+                </details>
+                <details>
+                    <summary id="25">При заселении в общежитие самим нужно куда-то обращаться для оформления
+                        временной прописки?</summary>
+                    <ul>
+                        <li>Студент после заключения договора в общежитии, должен обратиться в паспортный стал
+                            (кабинет 101, а первом этаже общежития Горняк-2) и оформить временную регистрацию.</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary id="26">Когда можно заселиться в общежитие?</summary>
+                    <ul>
+                        <li>Заселение начинается с 25 августа. После выхода приказа о предоставлении места в
+                            общежитии и при наличии свободных мест, студент может заселиться. </li>
+                    </ul>
+                </details>
+                <details>
+                    <summary id="27">Как понять, в каком корпусе я буду жить?</summary>
+                    <ul>
+                        <li>На сайте университета вывешены списки о заселении, где есть информация о корпусе
+                            заселения</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary id="28">Какие документы с собой брать?</summary>
+                    <ul>
+                        <li>Паспорт и его ксерокопия.</li>
+                        <li>Согласие на заключение договора найма жилого помещения (для несовершеннолетних).</li>
+                        <li>Военнообязанным необходимо предъявить военный билет либо приписное свидетельство.</li>
+                        <li>Заявление на предоставление места в общежитии.</li>
+                        <li>Копия полиса ОМС или ДМС.</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary id="29">Могу ли я заселиться с другом?</summary>
+                    <ul>
+                        <li>Если друг является студентом НИТУ МИСИС и распределен с вами в один корпус, то возможно.
+                        </li>
+                    </ul>
+                </details>
+                <details>
+                    <summary id="30">Какого типа моё общежитие?</summary>
+                    <ul>
+                        <li>Общежитие блочного типа.</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary id="31">Что делать, если мне нет 18 лет?</summary>
+                    <ul>
+                        <li>Необходимо оформить - согласие на заключение договора найма жилого помещения (для
+                            несовершеннолетних).</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary id="32">Можно ли переехать в другой корпус?</summary>
+                    <ul>
+                        <li>При согласии и подписи заявления директорами корпусов, возможно.</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary id="33">Чем можно и чем нельзя пользоваться в общежитии?</summary>
+                    <ul>
+                        <li>Перечень разрешенных электроприборов прописан в договоре найма жилых помещений.</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary id="34">Есть ли на территории прачечные, столовые, магазины?</summary>
+                    <ul>
+                        <li>В Горняк-2 находится прачечная.</li>
+                        <li>В Горняк -1 находится прачечная самообслуживания.</li>
+                        <li>В Горняке-1 есть столовая. </li>
+                        <li>Магазины – Горняк-1 и Горняк-2.</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary id="35">Куда обращаться со своими проблемами?</summary>
+                    <ul>
+                        <li>Студенты, проживающие в общежитии со всеми своими вопросами, обращаются к своему
+                            администратору и старосте этажа.</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary id="36">Нужна ли прививка от COVID-19?</summary>
+                    <ul>
+                        <li>Желательно для вашей безопасности заражения.</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary id="37">Есть ли конкурс на место в общежитие?</summary>
+                    <ul>
+                        <li>Нет.</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary id="38">Сколько человек живет в комнате?</summary>
+                    <ul>
+                        <li>В общежитии Горня-2 и Горняк – 1 комнаты – двух- или трехместные (на 2 или 3 человека).
+                        </li>
+                    </ul>
+                </details>
+                <details>
+                    <summary id="39">Какая цена для бюджетников и контрактников?</summary>
+                    <ul>
+                        <li>Бюджет – 2200 руб/месяц.</li>
+                        <li>Контракт – 3800 руб/месяц.</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary id="40">Могут ли родители заселиться на время в общежитии?</summary>
+                    <ul>
+                        <li>Могут если есть свободные места.</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary id="41">Есть ли камеры хранения?</summary>
+                    <ul>
+                        <li>В общежитии Горняк-2 камера хранения находится на 9 этаже ком. 918. Со всеми вопросами
+                            обращаться в кабинет 209 (с 9-00 до 13-00 понедельник-пятница).</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary id="42">Во сколько наступает комендантский час?</summary>
+                    <ul>
+                        <li>Комендантского часа в общежитии - нет.</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary id="43">Как попасть в Студенческий Совет Общежитий?</summary>
+                    <ul>
+                        <li>Обратиться к председателю Студенческого Совета и подать заявку.</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary id="44">Утюг будет в общежитии? </summary>
+                    <ul>
+                        <li>Разрешённая бытовая техника приобретается самими проживающими.</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary id="45">Общежитие закрывается на ночь? Если да, то во сколько?</summary>
+                    <ul>
+                        <li>Общежитие не закрывается на ночь.</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary id="46">Опекун считается за родителя?</summary>
+                    <ul>
+                        <li>Да.</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary id="47">Где взять бланк заявления на предоставление мест в общежитии?</summary>
+                    <ul>
+                        <li>На данном устройстве в разделе "Документы"</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary id="48">Необходимо ли регистрировать свою бытовую технику (чайник, утюг, фен), как это
+                        происходит и есть ли какие-то ограничения по Вт?</summary>
+                    <ul>
+                        <li>Такой необходимости нет. Ограничение 1,5 квт.</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary id="49">Если я не могу явиться в указанные сроки на заселение, за меня может прийти
+                        доверенное лицо?</summary>
+                    <ul>
+                        <li>Студент лично подписывает договор найма жилья и предоставляет все необходимые документы
+                            для заселения.</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary id="50">Как работает гостевой режим?</summary>
+                    <ul>
+                        <li>с 17-00 до 23-00. В Выходные с 10-00 до 23-00.</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary id="51">Что делать, если родственник/друг приезжает днём, когда гостевой еще закрыт?
+                    </summary>
+                    <ul>
+                        <li>Необходимо заранее обратиться к администратору и оформить временный пропуск.</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary id="52">Почему в 3-ке нельзя ничего клеить/весить на стену?</summary>
+                    <ul>
+                        <li>Чтобы не повредить ремонт.</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary id="53">Как проводится санобработка комнаты от тараканов/клопов?</summary>
+                    <ul>
+                        <li>Ежемесячно согласно графику, проводится дезинсекция общежития и по заявке поданной через
+                            электронную платформу.</li>
+                    </ul>
+                </details>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="contacts_modal">
+        <div class="modal-content">
+            <div class="modal_appbar">
+                <p class="modal_title">Контакты</p>
+                <span class="close-button close-modal" data-modal="guide_modal">&times;</span>
+            </div>
+
+            <div class="contact_body">
+                <p class="aligncenter">
+                <div class="wrapper">
+                    <h1 itemprop="headline" class="original-text">Горняк&nbsp;2 (Г-2)</h1>
+                    <div class="content" id="js-content">
+                        <h3 class="first_child ">Адрес общежития</h3>
+                        Москва, пр. <nobr>60-летия</nobr> Октября д.&nbsp;11&nbsp;(станция метро Ленинский
+                        проспект / Академическая)
+                        <h3>Контакты администрации</h3>
+                        <table class="data" border="1">
+                            <tbody>
+                                <tr class="o">
+                                    <td class="p0"><img alt="" src="assets/img/kir.jpg" width="200" height="316"><br>
+                                    </td>
+                                    <td class="p2">
+                                        <h5 class="first_child ">Олег Владимирович Кирвяков</h5>
+                                        <p class="last_child ">Начальник участка</p>
+                                    </td>
+                                    <td class="p3">
+                                        <p class="first_child ">
+                                            <nobr class="phone">+7 499 135-70-74</nobr></a><br>
+                                        </p>
+                                        <p>kirvyakov.ov@misis.ru</a></p>
+                                        <p class="last_child ">Кабинет&nbsp;— 518</p>
+                                    </td>
+                                    <td class="p4">
+                                        <p class="first_child ">Пн.-пт.&nbsp;<nobr>9:00-18:00</nobr>
+                                        </p>
+                                        <p class="last_child ">Перерыв&nbsp;<nobr>13:00-14:00</nobr>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="p0"><img alt="" src="assets/img/ovd.jpg" width="200" height="316"><br>
+                                    </td>
+                                    <td class="p2">
+                                        <h5 class="first_child ">Наталья Александровна Овдиенко</h5>
+                                        <p class="last_child ">Администратор</p>
+                                    </td>
+                                    <td class="p3">
+                                        <p class="first_child ">
+                                            <nobr class="phone">+7 499 135-08-33</nobr></a><br>
+                                        </p>
+                                        <p>ovdienko.na@misis.ru</a></p>
+                                        <p class="last_child ">Кабинет&nbsp;— 418</p>
+                                    </td>
+                                    <td class="p4">
+                                        <p class="first_child ">Пн.-пт.&nbsp;<nobr>9:00-18:00</nobr>
+                                        </p>
+                                        <p class="last_child ">Перерыв&nbsp;<nobr>13:00-14:00</nobr>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr class="o">
+                                    <td class="p0"><img alt="" src="assets/img/cher.jpg" width="200" height="316"><br>
+                                    </td>
+                                    <td class="p2">
+                                        <h5 class="first_child ">Оксана Викторовна Черныш</h5>
+                                        <p class="last_child ">Администратор</p>
+                                    </td>
+                                    <td class="p3">
+                                        <p class="first_child ">
+                                            <nobr class="phone">+7 499 135-09-33</nobr></a><br>
+                                        </p>
+                                        <p>chernysh.ov@misis.ru</a></p>
+                                        <p class="last_child ">Кабинет&nbsp;— 1518</p>
+                                    </td>
+                                    <td class="p4">
+                                        <p class="first_child ">Пн.-пт.&nbsp;<nobr>9:00-18:00</nobr>
+                                        </p>
+                                        <p class="last_child ">Перерыв&nbsp;<nobr>13:00-14:00</nobr>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr class="o">
+                                    <td class="p0"><img alt="" src="assets/img/must.JPG" width="200" height="316"><br>
+                                    </td>
+                                    <td class="p2">
+                                        <h5 class="first_child ">Мустафаев Мухаммадали Мухамадиевич</h5>
+                                        <p class="last_child ">Командир СОО студгородка «Горняк-2»</p>
+                                    </td>
+                                    <td class="p3">
+                                        <p class="first_child ">
+                                            <nobr class="phone">+7 991 945-10-59</nobr></a><br>
+                                        </p>
+                                        <p>m2011232@edu.misis.ru</a></p>
+                                        <p class="last_child ">Кабинет&nbsp;— 1513б</p>
+                                    </td>
+                                    <td class="p4">
+                                        <p class="first_child ">Пн.-пт.&nbsp;<nobr>9:00-18:00</nobr>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="5" class="p0">
+                                        <p></p>
+                                        <h3>Схема проезда</h3>
+                                        <p class="last_child ">
+                                            <img alt="" src="assets/img/gorn2.jpg" width="704" height="528">
+                                        </p>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
